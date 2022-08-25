@@ -1,0 +1,59 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: black;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.7;
+    font-size: 20px;
+    color: white;
+    max-width: 1440px;
+    margin: 10px auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+
+  .container{
+    margin: 100px solid;
+    background-color: #312450;
+    padding: 100px solid;  
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+  header{
+    font-size: medium;
+    font-weight: bolder;
+  }
+  
+  
+
+ .tasks{
+  list-style-position: inside;
+ }
+ 
+ .skills{
+  list-style-position: inside;
+ }
+
+ 
+ .interests{
+  list-style-position: inside;
+ }
+ 
+@media (max-width: 768px) {
+    body {
+      grid-template-columns: 50% 50%;
+      width: 100%;
+    }
+}
