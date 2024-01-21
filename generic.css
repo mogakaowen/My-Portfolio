@@ -1,59 +1,171 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background: black;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    line-height: 1.7;
-    font-size: 20px;
-    color: white;
-    max-width: 1440px;
-    margin: 10px auto;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    align-items: stretch;
-    justify-content: space-around;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .container{
-    margin: 100px solid;
-    background-color: #312450;
-    padding: 100px solid;  
-    border-radius: 10px;
-    justify-content: center;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Helvetica", sans-serif;
+}
 
-  header{
-    font-size: medium;
-    font-weight: bolder;
-  }
-  
-  
+.page {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #fff;
+}
 
- .tasks{
-  list-style-position: inside;
- }
- 
- .skills{
-  list-style-position: inside;
- }
+.starter {
+  background-color: grey;
+  width: 100%;
+  height: 10vh;
+}
 
- 
- .interests{
-  list-style-position: inside;
- }
- 
-@media (max-width: 768px) {
-    body {
-      grid-template-columns: 50% 50%;
-      width: 100%;
-    }
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  border: solid 5px maroon;
+  letter-spacing: 5px;
+  padding-bottom: 27px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black dotted;
+  border-top: none;
+  padding: 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px black dotted;
+  border-top: none;
+}
+
+.profile-container p {
+  border-top: 1px black dotted;
+  padding-top: 5px;
+}
+
+.title-container {
+  background-color: grey;
+  padding: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+    "education experience"
+    "education experience";
+  grid-template-columns: 2fr 4fr;
+}
+
+main {
+  grid-area: experience;
+}
+
+aside {
+  grid-area: education;
+}
+
+.education {
+  border: 1px black dotted;
+  border-top: none;
+  padding: 20px;
+  background-color: rgb(250, 247, 247);
+}
+
+.experience {
+  border: 1px black dotted;
+  border-top: none;
+  border-left: none;
+  padding: 20px;
+}
+
+header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul.tasks {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+li.task {
+  margin-bottom: 5px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-areas:
+    "education experience"
+    "education experience";
+  grid-template-columns: 2fr 4fr;
+}
+
+main {
+  grid-area: experience;
+}
+
+aside {
+  grid-area: education;
+}
+
+.main-skills {
+  border: 1px black dotted;
+  border-top: none;
+  padding: 20px;
+  background-color: rgb(250, 247, 247);
+}
+
+.other-skills {
+  border: 1px black dotted;
+  border-top: none;
+  border-left: none;
+  padding: 20px;
+}
+
+ul.skills {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+li.item {
+  margin-bottom: 5px;
+}
+
+ul.referees {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px black dotted;
+  border-top: none;
+  border-bottom: solid 5px maroon;
+}
+
+.footer-title {
+  background-color: grey;
+  padding: 20px;
 }
